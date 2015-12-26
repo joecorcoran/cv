@@ -176,7 +176,7 @@ li {
 @media print {
 
   @page {
-    margin: 80px 120px 120px;
+    margin: 70px 120px 0;
   }
 
   @page :first {
@@ -208,7 +208,7 @@ li {
       display: block;
       position: static;
       text-align: left;
-      margin-bottom: 1.75em;
+      margin-bottom: 1.5em;
       span {
         box-shadow: none;
         padding: 0;
@@ -219,13 +219,8 @@ li {
     }
   }
 
-  .button {
-    color: inherit;
-    background: none;
-    text-decoration: underline;
-    &:after {
-      content: none;
-    }
+  .action, .button {
+    display: none;
   }
 
 }
